@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/reactjs-stocksWatchlist/static/css/main.c68e1c3b.chunk.css",
+    "main.js": "/reactjs-stocksWatchlist/static/js/main.b044fcc0.chunk.js",
+    "main.js.map": "/reactjs-stocksWatchlist/static/js/main.b044fcc0.chunk.js.map",
+    "runtime~main.js": "/reactjs-stocksWatchlist/static/js/runtime~main.048085c3.js",
+    "runtime~main.js.map": "/reactjs-stocksWatchlist/static/js/runtime~main.048085c3.js.map",
+    "static/css/2.22a7d4ef.chunk.css": "/reactjs-stocksWatchlist/static/css/2.22a7d4ef.chunk.css",
+    "static/js/2.caef217f.chunk.js": "/reactjs-stocksWatchlist/static/js/2.caef217f.chunk.js",
+    "static/js/2.caef217f.chunk.js.map": "/reactjs-stocksWatchlist/static/js/2.caef217f.chunk.js.map",
+    "index.html": "/reactjs-stocksWatchlist/index.html",
+    "precache-manifest.740a6ae5a77be6ef3730eef3580ac074.js": "/reactjs-stocksWatchlist/precache-manifest.740a6ae5a77be6ef3730eef3580ac074.js",
+    "service-worker.js": "/reactjs-stocksWatchlist/service-worker.js",
+    "static/css/2.22a7d4ef.chunk.css.map": "/reactjs-stocksWatchlist/static/css/2.22a7d4ef.chunk.css.map",
+    "static/css/main.c68e1c3b.chunk.css.map": "/reactjs-stocksWatchlist/static/css/main.c68e1c3b.chunk.css.map"
+  }
+}
