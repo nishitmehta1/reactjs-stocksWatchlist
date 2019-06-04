@@ -47,8 +47,12 @@ class MainView extends Component {
 
   render() {
     return (
-      <div className='mainview'>
-        <Search onStockAdd={this.onStockAddHandler} />
+      <div className='mainview container'>
+        <Search
+          onStockAdd={this.onStockAddHandler}
+          stockList={this.state.stockList}
+          onStockRemove={this.onStockRemoveHandler}
+        />
         <MyStocks
           onStockRemove={this.onStockRemoveHandler}
           data={this.state.data}

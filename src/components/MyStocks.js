@@ -16,7 +16,7 @@ class MyStocks extends Component {
   render() {
     return (
       <div className='mystocks_div'>
-        {this.props.data && <h3 className='yourName'>Your List:</h3>}
+        {this.props.data && <h4 className='yourList'>Your List:</h4>}
         <div className='mystocks'>
           {this.props.data &&
             this.props.data.map((stock, key) => (

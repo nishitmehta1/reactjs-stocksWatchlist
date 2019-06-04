@@ -27,7 +27,7 @@ class Search extends Component {
           }
         } else {
           this.setState({
-            searchedStocks: []
+            searchedStocks: null
           });
         }
       }
@@ -40,31 +40,50 @@ class Search extends Component {
   };
 
   render() {
-    const stocks = this.state.searchedStocks.map((stock, key) => (
-      <div className='card eachSuggestion' key={key}>
-        <div className='card-body'>
-          <h5 className='card-title'>{stock['symbol']}</h5>
-          <h6 className='card-subtitle mb-2 text-muted'>{stock['name']}</h6>
-          <p className='card-text'>${stock['price']}</p>
-          <button
-            href='#'
-            className='card-link btn-primary'
-            onClick={() => this.onAddButtonClick(stock['symbol'])}
-          >
-            Add
-          </button>
-        </div>
-      </div>
-    ));
+    const stocks =
+      this.state.searchedStocks !== null
+        ? this.state.searchedStocks.map((stock, key) => (
+            <div className='card eachSuggestion' key={key}>
+              <div className='card-body'>
+                <h5 className='card-title'>{stock['symbol']}</h5>
+                <h6 className='card-subtitle mb-2 text-muted'>
+                  {stock['name']}
+                </h6>
+                <p className='card-text'>${stock['price']}</p>
+                {this.props.stockList.includes(stock['symbol']) ? (
+                  <button
+                    href='#'
+                    className='btn-outline-primary'
+                    disabled
+                    onClick={() => this.onAddButtonClick(stock['symbol'])}
+                  >
+                    Add
+                  </button>
+                ) : (
+                  <button
+                    href='#'
+                    className='card-link addButton btn-primary btn-block'
+                    onClick={() => this.onAddButtonClick(stock['symbol'])}
+                  >
+                    Add
+                  </button>
+                )}
+              </div>
+            </div>
+          ))
+        : '';
     return (
       <div className='search'>
-        <input
-          type='search'
-          placeholder='Search by typing the Symbol'
-          className='form-control'
-          value={this.state.searchStock}
-          onChange={this.handleChange}
-        />
+        <div className='input-group input-group-lg'>
+          <input
+            type='search'
+            placeholder='Search by typing the Symbol (E.g. AAPL, MSFT, LYFT...)'
+            className='form-control input-group-lg searchBar'
+            value={this.state.searchStock}
+            onChange={this.handleChange}
+          />
+        </div>
+
         <div className='suggestedStocks'>{stocks}</div>
       </div>
     );

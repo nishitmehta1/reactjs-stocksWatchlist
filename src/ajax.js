@@ -2,9 +2,10 @@ const apiHost = 'https://api.worldtradingdata.com/api/v1/';
 const search = 'stock_search';
 const quotePrice = 'stock';
 const apikey =
-  'api_token=IsdX32acGoVARDNcEHAVClZRX0BNcuvrWeLSpy9is5Ipe9CP5J6Z8EnYFoL2';
+  'api_token=kyUmO7F6Euzgg5Q8V3768Z49T1fwtjKQ5GIFpIMDVdJLVwvOkN5aR1HCeX8J';
 // IsdX32acGoVARDNcEHAVClZRX0BNcuvrWeLSpy9is5Ipe9CP5J6Z8EnYFoL2
 // BMxa3DAbRA6UN72hRMCZb228oPGAO5IXO86RZcEB4dbktedzZUsfuBdSNNWQ
+// kyUmO7F6Euzgg5Q8V3768Z49T1fwtjKQ5GIFpIMDVdJLVwvOkN5aR1HCeX8J
 export default {
   async fetchStockPrice(val) {
     try {
